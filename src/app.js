@@ -12,7 +12,7 @@ import mocksRouter from './routes/mocks.router.js'
 
 dotenv.config();
 const app = express();
-const PORT = process.env.PORT||8080;
+const PORT = process.env.PORT||3000;
 mongoose.connect(process.env.MONGO_URL)
 .then(() => {
     console.log("Conectado a la base de datos");
